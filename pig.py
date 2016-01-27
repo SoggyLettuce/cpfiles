@@ -18,16 +18,13 @@ def take_turn(player):
         else:
             point += r
             print " your total is", point
-            y= raw_input ("do you want to continue? y=yes n=no")
+            y= raw_input ("do you want to continue? y=yes n=no: ")
             if y== "y":
                 keep_rolling= 1
             else:
                 keep_rolling= 0
     print "your turn is over"
     return point
-
-
-
 
 def show_instructions():
     print " Welcome to the game of Pig. To win, be the"
@@ -40,9 +37,6 @@ def show_instructions():
     print " you a 1, your turn is over, and you do not"
     print " obtain any points that turn."
     print
-
-
-
 
 def main():
     show_instructions()
